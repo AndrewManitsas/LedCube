@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Arduino LED Cube Control Site</title>
-</head>
-<body>
-	<h1>Arduino LED Cube Control Site</h1>
-	<h3>Andrew Manitsas (andrewmanitsas@gmail.com) - December 2016</h3>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<form action="pattern_select.php" method="GET">
-		<input type="radio" name="def_pattern" value="0" checked="checked">OFF<br>
-		<input type="radio" name="def_pattern" value="1">All ON<br>
-		<input type="radio" name="def_pattern" value="2">Led Run<br>
-		<input type="radio" name="def_pattern" value="3">Column Run<br>
-		<input type="radio" name="def_pattern" value="4">Random Party<br>
-		<input type="radio" name="def_pattern" value="5">Reflective<br>
-		<input type="radio" name="def_pattern" value="6">Test Animation
-		<br>
-		<a href="custom_pattern.html">CUSTOM ANIMATION</a>
-		<br>
-		<br>
-		<input type="submit" name="sub" value="Set"><br>
-	</form>
-</body>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<title>Arduino LED Cube Control Site</title>
+	</head>
+	<body>
+		<h1>Arduino LED Cube Control Site</h1>
+		<h3>Andrew Manitsas (andrewmanitsas@gmail.com) - December 2016</h3>
+
+		<form action="pattern_select.php" method="GET">
+			<input type="radio" name="def_pattern" value="0" checked="checked">OFF<br>
+			<input type="radio" name="def_pattern" value="1">All ON<br>
+			<input type="radio" name="def_pattern" value="2">Led Run<br>
+			<input type="radio" name="def_pattern" value="3">Column Run<br>
+			<input type="radio" name="def_pattern" value="4">Random Party<br>
+			<input type="radio" name="def_pattern" value="5">Reflective<br>
+			<input type="radio" name="def_pattern" value="6">Test Animation
+			<br>
+			<a href="custom_pattern.html">CUSTOM ANIMATION</a>
+			<br>
+			<br>
+			<input type="submit" name="sub" value="Set"><br>
+		</form>
+	</body>
 </html>

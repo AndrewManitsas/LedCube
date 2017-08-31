@@ -9,26 +9,39 @@
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
+
+		<link rel="stylesheet" href="style.css"> 
+
 		<title>Arduino LED Cube Control Site</title>
 	</head>
 	<body>
-		<h1>Arduino LED Cube Control Site</h1>
-		<h3>Andrew Manitsas (andrewmanitsas@gmail.com) - December 2016</h3>
+		<div class="row">
+			<div class="col-md-12">
+				<h1 id="main-title">Arduino LED Cube Control Site</h1>
+			</div>
+		</div>
 
-		<form action="pattern_select.php" method="GET">
-			<input type="radio" name="def_pattern" value="0" checked="checked">OFF<br>
-			<input type="radio" name="def_pattern" value="1">All ON<br>
-			<input type="radio" name="def_pattern" value="2">Led Run<br>
-			<input type="radio" name="def_pattern" value="3">Column Run<br>
-			<input type="radio" name="def_pattern" value="4">Random Party<br>
-			<input type="radio" name="def_pattern" value="5">Reflective<br>
-			<input type="radio" name="def_pattern" value="6">Test Animation
-			<br>
-			<a href="custom_pattern.html">CUSTOM ANIMATION</a>
-			<br>
-			<br>
-			<input type="submit" name="sub" value="Set"><br>
-		</form>
+		<div class="row">
+			<div class="col-md-12">
+				<h3 id="sec-title">Andrew Manitsas (andrewmanitsas@gmail.com)</h3>
+			</div>
+		</div>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">Led Cube Options</div>
+			<div class="panel-body">
+				<form action="pattern_select.php" method="GET">
+					<input type="radio" name="def_pattern" value="0" checked="checked">OFF<br>
+					<input type="radio" name="def_pattern" value="1">All ON<br>
+					<input type="radio" name="def_pattern" value="2">Led Run<br>
+					<input type="radio" name="def_pattern" value="3">Column Run<br>
+					<input type="radio" name="def_pattern" value="4">Random Party<br>
+					<input type="radio" name="def_pattern" value="5">Reflective<br>
+					<input type="radio" name="def_pattern" value="6">Test Animation
+					<br>
+					<input type="submit" name="sub" value="Set"><br>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
